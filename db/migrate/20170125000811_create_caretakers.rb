@@ -3,7 +3,7 @@ class CreateCaretakers < ActiveRecord::Migration[5.0]
     create_table :caretakers do |t|
       t.string :name
       t.string :department
-      t.string :access
+      t.boolean :access, default: false
 
       t.timestamps
     end
